@@ -1,23 +1,68 @@
-# DecodeLabs Project 1 - Responsive Frontend Interface
+# DecodeLabs Full-Stack Internship Project
 
-**Batch 2026 | Full Stack Development Internship**
+**Batch 2026 | Complete Full-Stack Web Application**
 
-Modern, fully responsive single-page website built with pure HTML, CSS, and JavaScript (Mobile-First).
+A modern, responsive full-stack web application featuring a beautiful frontend interface and a robust backend API for internship applications.
 
 ## Features
-- Semantic HTML5
-- CSS Grid + Flexbox
-- Mobile-First responsive design (works perfectly on phone, tablet, desktop)
-- Interactive hamburger menu
-- Beautiful 2025 color palette from official DecodeLabs guidelines
-- Hover animations and smooth UX
-
-## Live Demo
-[Click here to see live website](https://your-username.github.io/decode-labs-project-1/)
+- **Frontend**: Semantic HTML5, CSS Grid + Flexbox, Mobile-First responsive design
+- **Backend**: Node.js + Express API with CORS support
+- **Form Handling**: Client and server-side validation, async submission
+- **UI/UX**: Interactive hamburger menu, smooth scrolling, hover animations
+- **Professional Design**: Custom color palette, modern styling, accessibility-focused
 
 ## Tech Stack
-- HTML5
-- CSS3 (Grid, Flexbox, Media Queries)
-- Vanilla JavaScript
+- **Frontend**: HTML5, CSS3, Vanilla JavaScript
+- **Backend**: Node.js, Express.js, CORS
+- **Validation**: Regex-based email validation, input sanitization
 
-Made with ❤️ for DecodeLabs Internship Program
+## Project Structure
+```
+decode_labs/          # Frontend
+├── index.html
+├── styles.css
+├── script.js
+└── README.md
+
+project2-backend/     # Backend API
+├── server.js
+├── package.json
+└── (node_modules)
+```
+
+## How to Run
+
+### Prerequisites
+- Node.js installed on your system
+- A web browser
+
+### Backend Setup
+1. Navigate to the backend directory:
+   ```bash
+   cd project2-backend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the server:
+   ```bash
+   npm start
+   ```
+   The API will run on `http://localhost:5000`
+
+### Frontend
+1. Open `decode_labs/index.html` in your web browser
+2. The frontend will connect to the backend API for form submissions
+
+### API Endpoints
+- `GET /` - Test endpoint
+- `POST /add-user` - Submit internship application
+- `GET /users` - Retrieve all applications
+- `PUT /update-user/:id` - Update an application
+- `DELETE /delete-user/:id` - Delete an application
+
+## Live Demo
+[Frontend Demo](https://your-username.github.io/decode-labs/)
+
+Made with ❤️ for DecodeLabs Internship Program 2026

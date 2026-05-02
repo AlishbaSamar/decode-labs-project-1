@@ -234,7 +234,61 @@ nav {
   transform: scale(1.05);
 }
 
-/* About Section */
+/* Internship Section */
+.internship {
+  padding: 4rem 2rem;
+  background: var(--ethereal);
+  text-align: center;
+}
+
+.internship h2 {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+}
+
+.internship-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.internship-details {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.internship-details h3 {
+  font-size: 1.5rem;
+  color: var(--mocha);
+  margin-bottom: 1rem;
+}
+
+.internship-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.internship-details li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--text-dark);
+}
+
+.internship-details li:last-child {
+  border-bottom: none;
+}
+
+.internship-details li:before {
+  content: "✓ ";
+  color: var(--mocha);
+  font-weight: bold;
+}
 .about {
   padding: 4rem 2rem;
   background: linear-gradient(to right, var(--moonlit), rgba(255, 255, 255, 0.5));
@@ -282,7 +336,89 @@ nav {
   opacity: 0.8;
 }
 
-/* Footer */
+/* Contact Section */
+.contact {
+  padding: 4rem 2rem;
+  background: var(--moonlit);
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  margin-bottom: 3rem;
+  opacity: 0.8;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--ethereal);
+  box-shadow: 0 0 0 3px rgba(160, 212, 224, 0.2);
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, var(--ethereal), var(--mocha));
+  color: var(--text-light);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
 footer {
   background: var(--text-dark);
   color: var(--text-light);
@@ -315,6 +451,12 @@ footer p {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .internship-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-form {
+    padding: 4rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -323,5 +465,8 @@ footer p {
   }
   .hero h1 {
     font-size: 5rem;
+  }
+  .internship-content {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
